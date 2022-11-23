@@ -283,10 +283,6 @@ class MainWindow(QWidget):
                 WHERE id={category_id};"""
             )
             self.load_categories()
-            query.exec(
-                f"""DELETE FROM tasks 
-                WHERE icategory_id={category_id};""")
-            self.load_tasks()
 
 ################   EDIT CAT   ############################
 
